@@ -1,0 +1,156 @@
+/* Setting up the Project */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+/* Setting the Page Elements */
+
+.experiences-header{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.experiences-header-text-title{
+    width: 35vw;
+    margin: 0;
+    /* font-size: 1.3em; */
+    font-family: 'Manrope';
+}
+
+.experiences-form{
+    background-color: rgba(0, 12, 117, 0.1);
+    border-radius: 10px;
+    padding: 3% 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.experiences-form div {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experiences-form div:nth-child(3) {
+    width: 100%;
+}
+
+.experiences-form div:nth-child(3) label{
+    margin-right: 8%;
+}
+
+.experiences-form div:nth-child(6) label{
+    margin-right: 45px;
+}
+
+.experiences-form div input,
+.experiences-form div textarea{
+    width: 65%;
+    background-color: transparent;
+    border: 1px solid #000c75;
+    border-radius: 5px;
+    height: 2rem;
+    margin: 15px 0;
+}
+
+.experiences-form div textarea{
+    width: 100%;
+    min-height: 50vh;
+    margin: 0;
+}
+
+.experiences-form div:nth-child(6) {
+    width: 100%;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.experiences-form div:nth-child(3) input{
+    width: 90%;
+    margin-right: 0;
+}
+
+.experiences-form div:last-child{
+    width: 100%;
+}
+
+.add-new-button{
+    background-color: transparent;
+    border: 2px solid #000c75;
+    color: #000c75;
+    padding: 0.3rem 0.5rem;
+    width: 7rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.add-new-button:hover{
+    background-color: #000c75;
+    color: #fff;
+}
+
+/* Media queries */
+
+@media (max-width: 992px) {
+    .experiences-header-text-title{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .experiences-form{
+        border-radius: 10px;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        padding: 3px;
+        width: 85vw;
+        background-color: transparent;
+        margin: 0 auto;
+    }
+
+    .experiences-form div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .experiences-form div:nth-child(3) {
+        width: 100%;
+    }
+    
+    .experiences-form div:nth-child(3) label{
+        margin-right: initial;
+    }
+    
+    .experiences-form div:nth-child(6) label{
+        margin-right: initial;
+    }
+    
+    .experiences-form div input,
+    .experiences-form div textarea,
+    .experiences-form div:nth-child(3) input{
+        width: 65%;
+        height: 2rem;
+    }
+
+    .experiences-form div textarea{
+        min-height: 20vh;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .experiences-form div:nth-child(6){
+        flex-direction: column;
+    }
+}

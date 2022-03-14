@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans";
+  color: #fff;
+}
+
+.navbar {
+  position: fixed;
+}
+
+header {
+  width: 100vw;
+  padding: 1rem;
+  background-color: #000c75;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidenav {
+  width: 100vw;
+  background-color: #000114;
+  position: absolute;
+  /* height: 95vh; */
+  top: -300%;
+  z-index: -1;
+  transition: all 0.7s;
+}
+
+.sidenav.active {
+  left: 0;
+  top: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding: 15px;
+}
+
+ul li:hover,
+ul li:active {
+  background-color: #000c7530;
+}
+
+header svg {
+  font-size: 30px;
+  margin-right: 20px;
+  color: #fff !important;
+}
+
+header .header_title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.main {
+  color: #202020;
+  padding: 2rem;
+  padding-top: 4rem;
+}
+
+button.btn.logout-btn {
+  background-color: transparent;
+  color: #ccc;
+  border: 0;
+  padding: 1rem;
+  font-size: 15px;
+}
+
+/* Setting the footer */
+
+.footer {
+  float: none;
+  color: #000;
+  transform: translateY(-40%);
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    width: 220px;
+    padding: 0;
+    height: 4rem;
+  }
+
+  header svg {
+    display: none;
+  }
+
+  header .header_title {
+    padding-left: 20px;
+  }
+
+  .sidenav {
+    left: 0;
+    top: 100%;
+    width: 220px;
+    height: 95vh;
+  }
+
+  .main {
+    padding-top: 0;
+    margin-left: 220px;
+  }
+}

@@ -1,0 +1,170 @@
+/* Setting up the Project */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+/* Setting the Page Elements */
+
+.experiences-header{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.experiences-header-text-title{
+    width: 35vw;
+    margin: 0;
+    /* font-size: 1.3em; */
+    font-family: 'Manrope';
+}
+
+.experiences-header-log-out-button button{
+    width: 9vw;
+    height: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: none;
+    border: solid 2px #000C75;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Manrope';
+    font-size: 1rem;
+}
+
+.experiences-header-log-out-button img{
+    width: 24px;
+}
+
+.experiences-header-add-button button{
+    width: 12vw;
+    height: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: none;
+    border: solid 2px #000C75;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Manrope';
+    font-size: 1rem;
+}
+
+.experiences-header-add-button{
+    margin-bottom: 3%;
+}
+
+.experiences-header-add-button button:hover,
+.experiences-header-log-out-button button:hover{
+    background: #000C75;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Configuring the table */
+
+.experiences-table table{
+    background-color: rgba(0, 12, 117, 0.1);
+    border-spacing: 0px;
+    border-radius: 10px 10px 0 0;
+    max-width: 90vw;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.experiences-table-header-item {
+    background-color: #000C75;
+    color: #fff;
+    text-align: left;
+    padding: 0 1.5rem;
+}
+
+.experiences-table-header-item:first-child {
+    border-radius: 10px 0 0 0;
+}.experiences-table-header-item:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+.experiences-table-content-row-item{
+    /* height: 6rem ; */
+    color: #000C75;
+    text-align: left;
+    padding-left: 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    max-width: 10rem;
+    height: 1.2em; 
+    white-space: nowrap;
+}
+
+.experiences-table-content-row:nth-child(even) .experiences-table-content-row-item{
+    border-top:  solid 1px rgba(0, 12, 117, 0.3);
+    border-bottom:  solid 1px rgba(0, 12, 117, 0.3);
+}
+
+.experiences-table-content-row-item:last-child{
+    width: 10rem;
+    height: 4rem;
+    text-align: center;
+    padding-left: initial;
+}
+
+.experiences-table-content-row:hover .btns .btn{
+    height: max-content;
+    visibility: visible;
+}
+
+.experiences-table-content-row:hover{
+    background-color: rgba(0, 12, 117, 0.2);
+}
+
+.experiences-table-content-row .btns .btn{
+    color: #fff;
+    border: 0;
+    padding: 0.5rem 0;
+    margin: 0 10px;
+    width: 4rem;
+}
+
+.experiences-table-content-row .btns{
+    align-items: center;
+  }
+
+/* Media queries */
+
+@media (max-width: 768px) {
+    .experiences-table {
+        width: 95vw;
+        overflow-y: scroll;
+        font-size: 1rem;
+    }
+
+    .experiences-table-header-item {
+        height: max-content;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    
+    .experiences-table-content-row-item{
+        padding:  1rem;
+        min-width: 10rem;
+    } 
+
+    .experiences-table-content-row .btns .btn{
+        height: max-content;
+        visibility: visible;
+      }
+    
+    .footer {
+        font-size: 1em;
+    }
+}

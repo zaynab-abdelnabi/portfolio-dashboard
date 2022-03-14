@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main h1 {
+  margin: 0;
+  padding: 2rem 0;
+}
+.btn {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn svg {
+  margin-right: 5px;
+}
+
+.edit-btn {
+  background-color: #027c00;
+}
+
+.edit-btn:hover {
+  background-color: #026400;
+}
+.header_info .btn {
+  color: #fff;
+  border: 0;
+  padding: 0.5rem 0;
+  margin: 0 20px;
+  width: 7rem;
+}
+
+.personal_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.section_info {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.section_info > div {
+  width: 50%;
+}
+
+.second_section_info > div {
+  margin: 1rem 0;
+}
+
+.section-img {
+  display: flex;
+  justify-content: center;
+}
+.name h2,
+.headline h2,
+.section-about h2 {
+  padding-top: 1rem;
+  color: #000c75;
+}
+.name h3,
+.headline h3,
+.section-about p {
+  margin-top: 0.5rem;
+}
+.section_info img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transform: rotate(1.3deg);
+}
+.section-about {
+  margin: 50px 0;
+  width: 100%;
+}
+.personal_info p {
+  line-height: 1.3rem;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 1rem 0;
+}
+.info-btn .btn {
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 1024px) {
+  .section-about {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .section-info {
+    display: flex;
+    justify-content: space-around;
+  }
+  .section_info > div {
+    width: 100%;
+  }
+  .header_info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header_info .btn {
+    width: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .section_info img {
+    z-index: -1;
+  }
+  .personal_info p {
+    text-align: justify;
+    font-size: 1rem;
+  }
+  .header_info h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .text {
+    display: none;
+  }
+  .section_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .section_info img {
+    margin: auto;
+  }
+  .second_section_info {
+    padding-top: 10px;
+  }
+  .name,
+  .headline {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .name h3,
+  .headline h3 {
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,180 @@
+.main h1 {
+  margin: 0;
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+
+.table {
+  margin: 2rem 0;
+  width: 100%;
+  border-spacing: 0;
+}
+
+.table tr.table-head th {
+  background-color: #000c75;
+  color: #fff;
+}
+
+.table th {
+  text-align: start;
+  padding: 1rem;
+  width: 30%;
+}
+
+.table tr:hover {
+  background-color: rgba(0, 12, 117, 0.2);
+}
+
+.table td {
+  padding: 1rem;
+  background-color: rgba(0, 12, 117, 0.1);
+  border-bottom: 1px solid #000c7530;
+}
+
+.table-head th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+.table-head th:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+.btn {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-new-btn {
+  background-color: transparent;
+  border: 2px solid #000c75;
+  color: #000c75;
+  padding: 0.3rem 0.5rem;
+}
+
+.add-new-btn:hover {
+  background-color: #000c75;
+  color: #fff;
+}
+
+.btn svg {
+  margin-right: 5px;
+}
+
+.edit-btn {
+  background-color: #027c00;
+}
+
+.edit-btn:hover {
+  background-color: #026400;
+}
+
+.delete-btn {
+  background-color: #9e0000;
+}
+
+.delete-btn:hover {
+  background-color: #750101;
+}
+
+.submit-btn:hover {
+  background-color: #000850;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+}
+
+.btns .btn {
+  visibility: hidden;
+}
+
+.table-row:hover .btns .btn {
+  visibility: visible;
+}
+
+.table-row .btns .btn {
+  color: #fff;
+  border: 0;
+  padding: 0.5rem 0;
+  margin: 0 20px;
+  width: 7rem;
+}
+
+.skill-form {
+  display: flex;
+  align-items: center;
+}
+
+.submit-btn {
+  padding: 0.5rem 1.5rem;
+  background-color: #000c75;
+  color: #fff;
+  border: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.skill-form input {
+  padding: 0.3rem;
+  border: 2px solid #000c75;
+  border-radius: 5px;
+  margin-left: 2rem;
+}
+
+.skill-form input[type="number"] {
+  width: 50px;
+}
+
+.skill-form label {
+  /* margin: 2rem 0; */
+  margin-right: 3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .main h1 {
+    padding: 1rem 0;
+  }
+  .btn-title {
+    display: none;
+  }
+  .table-row .btns .btn {
+    width: auto;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin: 0 10px;
+    visibility: visible;
+  }
+  .delete-btn svg,
+  .edit-btn svg {
+    margin-right: 0;
+  }
+  .table td {
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+  .main {
+    padding: 1rem;
+  }
+  .skill-form {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .skill-form input {
+    margin: 0.75rem 0 1.25rem 0;
+  }
+  .skill-form label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

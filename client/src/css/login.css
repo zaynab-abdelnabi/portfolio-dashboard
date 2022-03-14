@@ -1,0 +1,171 @@
+.background {
+    background-image: url("../img/img.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(6px);
+    position: fixed;
+    z-index: -1;
+}
+
+.login-page {
+    display: flex;
+}
+
+.login-page>div {
+    width: 50%;
+    height: 100vh;
+
+}
+
+.login-welcome {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome {
+    color: #000c75;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Manrope', Times, serif;
+    text-shadow: 2px 2px rgb(148, 157, 207);
+}
+
+.login-btns {
+    padding: 0.75rem 1.5rem;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    font-size: 'Manrope';
+
+}
+
+.portfolio-btn {
+    background-color: #fff;
+    color: #000c75;
+}
+
+.login-btn:hover {
+    background-color: #020844;
+}
+
+.portfolio-btn:hover,
+.login-btn {
+    color: #fff;
+    background-color: #000c75;
+}
+
+.login-form {
+    background-color: #fff;
+    color: #000c75;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.login-title {
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px rgb(148, 157, 207);
+}
+
+.login-title {
+    font-family: 'Manrope';
+}
+
+.login-title svg {
+    font-size: 7rem;
+}
+
+form.login-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    width: 50%;
+}
+
+.login-input label {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.login-input input {
+    padding: 0.75rem;
+    border: 2px solid #000c75;
+    border-radius: 5px;
+    margin: 1rem 0;
+    width: 100%;
+    padding-left: 4rem;
+}
+
+.login-input svg {
+    position: absolute;
+    margin: 0 1rem 0 0.5rem;
+}
+
+.login-input svg::after {
+    content: "";
+    background-color: #000c75;
+    height: 2rem;
+    width: 1px;
+}
+
+.line {
+    position: absolute;
+    margin: 0 3rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    margin: 1rem;
+    font-family: 'Manrope';
+}
+
+@media screen and (max-width: 992px) {
+    form.login-input {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .login-page {
+        display: block;
+    }
+
+    .login-page>div {
+        width: 100%;
+        height: auto;
+    }
+
+    .login-form {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+
+    .portfolio-btn {
+        display: none;
+    }
+
+    .welcome {
+        font-size: 2.5rem;
+        margin: 0.5rem 0;
+        color: #fff;
+    }
+
+    footer {
+        position: initial;
+    }
+}
